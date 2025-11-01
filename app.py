@@ -88,16 +88,16 @@ def get_flower():
                            image_path=image_path,
                            ps_line=ps_line)
 
+
 # Serve sitemap.xml for Google indexing
 @app.route('/sitemap.xml')
 def sitemap():
     return send_from_directory('.', 'sitemap.xml')
 
 # Serve Google Search Console verification file
-# (Replace the filename below with your actual Google file name, e.g., google1234abcd.html)
-@app.route('/google1234abcd.html')
+@app.route('/google6b7168d7c5342eb8.html')
 def google_verify():
-    return send_from_directory('.', 'google1234abcd.html')
+    return send_from_directory('.', 'google6b7168d7c5342eb8.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
