@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower for Your Mood 🌺</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe6f2, #e2d4ff);
+            color: #4a004e;
+            text-align: center;
+            padding: 80px 20px;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            color: #6a0572;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #5c1e5f;
+            margin-bottom: 40px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.7);
+            display: inline-block;
+            padding: 40px 50px;
+            border-radius: 20px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1.2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        input[list] {
+            padding: 12px 18px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            width: 250px;
+            font-size: 1em;
+            margin-top: 10px;
+            background-color: #fdf1fa;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background-color: #a84ac2;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #832c9a;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 60px;
+            color: #6a0572;
+            font-size: 0.95em;
+            opacity: 0.8;
+        }
+
+        .flower-emoji {
+            font-size: 2.5em;
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find Your Flower 🌸</h1>
+    <p>Tell me how you feel, and I’ll pick a flower just for you 💐</p>
+
+    <form action="/get_flower" method="POST">
+        <label for="emotion">Enter your emotion:</label><br>
+        <input list="emotions" id="emotion" name="emotion" placeholder="e.g., happy, sad, loved..." required><br>
+        <datalist id="emotions">
+            <option value="happy">
+            <option value="sad">
+            <option value="loved">
+            <option value="relaxed">
+            <option value="energetic">
+            <option value="romantic">
+            <option value="strong">
+            <option value="grateful">
+            <option value="creative">
+            <option value="stressed">
+            <option value="confident">
+            <option value="hopeful">
+            <option value="caring">
+            <option value="peaceful">
+            <option value="focused">
+        </datalist>
+        <button type="submit">Show My Flower 🌷</button>
+    </form>
+
+    <footer>
+        <div class="flower-emoji">🌼🌸🌺🌻🌹</div>
+        <p>P.S. I’ll get you real flowers soon 💐</p>
+    </footer>
+</body>
+</html>

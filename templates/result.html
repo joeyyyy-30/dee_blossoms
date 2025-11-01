@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flower 🌺</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fdfcfb, #e2d1c3);
+            text-align: center;
+            padding: 60px;
+        }
+        h2 {
+            font-size: 2.3em;
+            color: #3e1f47;
+        }
+        p {
+            font-size: 1.25em;
+            color: #444;
+            margin-top: 20px;
+        }
+        img {
+            width: 340px;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 35px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+        .ps-line {
+            margin-top: 30px;
+            font-style: italic;
+            color: #7b3f61;
+            font-size: 1.1em;
+        }
+        a {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 12px 24px;
+            background-color: #9a589d;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+        a:hover {
+            background-color: #6e3670;
+        }
+    </style>
+</head>
+<body>
+    <h2>{{ flower_name }}</h2>
+    <p>{{ message }}</p>
+    <img src="{{ image_path }}" alt="Flower Image">
+    <p class="ps-line">{{ ps_line }}</p>
+    <a href="/">← Back to Home</a>
+</body>
+</html>
