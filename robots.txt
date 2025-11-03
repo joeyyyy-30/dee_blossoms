@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dee-blossoms.onrender.com/sitemap.xml
